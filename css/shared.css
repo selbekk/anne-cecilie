@@ -107,6 +107,15 @@ html, body {
     cursor: pointer;
 }
 
+/*
+ * Longer texts
+ */
+
+.text-scroller {
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
 
 @media (min-width: 768px) {
     .masthead-brand {
