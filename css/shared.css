@@ -27,6 +27,11 @@ html, body {
     margin-left: auto;
 }
 
+.featured {
+    color: #ccc;
+    font-weight: bold;
+}
+
 /* Padding for spacing */
 .inner {
     padding: 30px;
