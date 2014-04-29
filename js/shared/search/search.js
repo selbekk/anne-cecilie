@@ -23,12 +23,12 @@
         var showField = function() {
             $field.css({
                 display: 'inline-block'
-            }).animate({ width: '100%' }, 300, function() { $field.focus() });
+            }).animate({ width: '140px' }, 300, function() { $field.focus() });
 
         };
 
         var hideField = function() {
-            $field.animate({ width: 0 }, 200, function() { $field.hide() });
+            $field.animate({ width: 0 }, 300, function() { $field.hide() });
         };
 
         var closeOnEscape = function(e) {
