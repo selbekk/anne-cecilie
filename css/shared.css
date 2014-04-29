@@ -45,6 +45,10 @@ html, body {
     margin-bottom: 10px;
 }
 
+.masthead-brand a {
+    color: white;
+}
+
 .masthead-nav > li {
     display: inline-block;
 }
