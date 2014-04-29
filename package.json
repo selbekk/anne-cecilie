@@ -1,0 +1,15 @@
+{
+  "name": "anne-cecilie",
+  "version": "0.0.0",
+  "description": "A portfolio template for wordpress",
+  "main": "app.js",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
