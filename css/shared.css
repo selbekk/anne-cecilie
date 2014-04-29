@@ -67,6 +67,43 @@ html, body {
     border-bottom-color: #fff;
 }
 
+/*
+ * Search
+ */
+.search-wrapper {
+    padding: 10px 0 0 0;
+
+    position: relative;
+    bottom: -3px;
+}
+
+.search-wrapper .search-field,
+.search-wrapper .glyphicon-search {
+    display: none;
+}
+
+.search-wrapper .search-form,
+.search-wrapper .glyphicon-search {
+    float: left;
+}
+
+.search-wrapper .search-field {
+    background-color: transparent;
+    width: 0;
+    border: 0;
+    margin: 0;
+
+    font-size: 110%;
+    outline: none;
+    border-bottom: 1px solid #eee;
+}
+
+.search-wrapper .glyphicon {
+    padding: 5px 10px;
+
+}
+
+
 @media (min-width: 768px) {
     .masthead-brand {
         float: left;
