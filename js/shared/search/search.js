@@ -37,14 +37,6 @@
             }
         };
 
-        var closeOnMouseOut = function() {
-            setTimeout(function() {
-                if( !$field.is(':focus') ) {
-                    hideField();
-                }
-            }, 1000);
-        };
-
         var closeOnFieldBlur = function(e) {
             setTimeout(function() {
                 if( !$field.is(':focus') ) {
@@ -60,7 +52,6 @@
 
         var initEvents = function() {
             $glyph.on('click', glyphClicked);
-            $wrapper.on('mouseout', closeOnMouseOut);
             $field.on('keyup', closeOnEscape);
             $field.on('blur', closeOnFieldBlur);
 
