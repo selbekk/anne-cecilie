@@ -27,6 +27,16 @@ html, body {
     background-size: cover;
 }
 
+.site-wrapper.modeling {
+    background: url(../img/content/fashion-2.jpg) top left no-repeat;
+    background-size: cover;
+}
+
+.site-wrapper.biography {
+    background: url(../img/content/fashion-3.jpg) top left no-repeat;
+    background-size: cover;
+}
+
 .site-wrapper.background-image .site-wrapper-inner {
     background-color: rgba(0,0,0,0.6);
 }
