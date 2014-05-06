@@ -44,6 +44,7 @@ html, body {
 .masthead-wrapper {
     position: fixed;
     top: 0; left: 0;
+    z-index: 100;
     width: 100%;
     background: #0e0e0e;
 }
@@ -204,6 +205,30 @@ html, body {
 
 .gallery .gallery-item img {
     width: 100%;
+}
+
+/*
+ * Resume
+ */
+
+.resume table {
+    width: 100%;
+}
+.resume table thead th {
+    background: #0f0f0f;
+    padding: 10px 5px;
+}
+
+.resume table td {
+    padding: 5px;
+}
+
+.resume table tr:nth-of-type(n) {
+    background-color: #3f3f3f;
+}
+
+.resume table tr:nth-of-type(2n) {
+    background-color: #666666;
 }
 
 
