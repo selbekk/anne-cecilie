@@ -78,6 +78,12 @@ html, body {
     color: rgba(255,255,255,.75);
     border-bottom: 2px solid transparent;
 }
+
+li.inactive a {
+    color: #555;
+}
+
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
     background-color: transparent;
