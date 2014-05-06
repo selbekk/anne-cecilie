@@ -37,6 +37,10 @@ html, body {
     background-size: cover;
 }
 
+.site-wrapper.resume {
+    background: url(../img/content/fashion-6.jpg) center left no-repeat;
+    background-size: contain;
+}
 
 .site-wrapper.biography {
     background: url(../img/content/fashion-3.jpg) top left no-repeat fixed;
@@ -257,7 +261,8 @@ li.inactive a {
     width: 100%;
 }
 .resume table thead th {
-    background: #0f0f0f;
+    background-color: #0f0f0f;
+    background-color: rgba(15,15,15, 0.8);
     padding: 10px 5px;
 }
 
@@ -267,10 +272,12 @@ li.inactive a {
 
 .resume table tr:nth-of-type(n) {
     background-color: #3f3f3f;
+    background-color: rgba(63,63,63, 0.8);
 }
 
 .resume table tr:nth-of-type(2n) {
     background-color: #666666;
+    background-color: rgba(102,102,102, 0.8);
 }
 
 
