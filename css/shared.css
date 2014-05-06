@@ -22,6 +22,15 @@ html, body {
     vertical-align: top;
 }
 
+.site-wrapper.index {
+    background: url(../img/content/fashion-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.site-wrapper.background-image .site-wrapper-inner {
+    background-color: rgba(0,0,0,0.6);
+}
+
 .cover-container {
     margin-right: auto;
     margin-left: auto;
