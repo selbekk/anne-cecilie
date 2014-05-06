@@ -23,17 +23,28 @@ html, body {
 }
 
 .site-wrapper.index {
-    background: url(../img/content/fashion-1.jpg) center center no-repeat;
+    background: url(../img/content/fashion-1.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
 .site-wrapper.modeling {
-    background: url(../img/content/fashion-2.jpg) top left no-repeat;
+    background: url(../img/content/fashion-2.jpg) top center no-repeat fixed;
     background-size: cover;
 }
 
+.site-wrapper.acting {
+    background: url(../img/content/fashion-5.jpg) center left no-repeat fixed;
+    background-size: cover;
+}
+
+
 .site-wrapper.biography {
-    background: url(../img/content/fashion-3.jpg) top left no-repeat;
+    background: url(../img/content/fashion-3.jpg) top left no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.booking {
+    background: url(../img/content/fashion-4.jpg) center left no-repeat;
     background-size: cover;
 }
 
