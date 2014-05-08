@@ -38,8 +38,8 @@ html, body {
 }
 
 .site-wrapper.resume {
-    background: url(../img/content/fashion-6.jpg) center left no-repeat;
-    background-size: contain;
+    background: url(../img/content/fashion-6.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .site-wrapper.biography {
@@ -375,17 +375,18 @@ li.inactive a {
  */
 
 .mastfoot-wrapper {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #0f0f0f;
-    width: 100%;
+    display: none;
 }
 
 .mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255, 255, 255, .5);
     margin: 0 auto;
+}
+
+.mastfoot .inner p,
+.mastfoot .inner a {
+    color: #666;
+    text-align: center;
+    margin: 0;
 }
 
 
@@ -399,7 +400,22 @@ li.inactive a {
         position: fixed;
         top: 0;
     }
+
+    .mastfoot .inner {
+        padding: 10px;
+    }
+
+    .mastfoot-wrapper {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #0f0f0f;
+        opacity: 0.75;
+    }
     .mastfoot {
+        display: block;
         position: static;
     }
     /* Start the vertical centering */
