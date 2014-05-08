@@ -58,7 +58,7 @@ html, body {
 }
 
 .site-wrapper.background-image .site-wrapper-inner {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .cover-container {
@@ -138,6 +138,10 @@ li.inactive a {
 /*
  * Search
  */
+li.search {
+    display: none;
+}
+
 .search-wrapper {
     padding: 10px 0 0 0;
 
@@ -399,6 +403,10 @@ li.inactive a {
     .masthead {
         position: fixed;
         top: 0;
+    }
+
+    li.search {
+        display: inline-block;
     }
 
     .mastfoot .inner {
