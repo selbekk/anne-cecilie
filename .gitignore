@@ -1,6 +1,7 @@
 *.iml
 .idea/
 
+wordpress/
 .DS_Store
 */.DS_Store
 node_modules/
