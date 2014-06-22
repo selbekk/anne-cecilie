@@ -10,16 +10,16 @@ Template Name: Blog page
         <?php
         $temp = $wp_query; $wp_query= null;
         $wp_query = new WP_Query(); $wp_query->query('showposts=5' . '&paged='.$paged);
-        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+        if(!$wp_query->have_posts()) {
+            get_template_part("content", "none");
+        }
+        else {
+        while ($wp_query->have_posts()) { $wp_query->the_post();
+            get_template_part("content", get_post_format());
+        }
 
-            <article>
-                <h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
-                <?php the_content(); ?>
-            </article>
-
-        <?php endwhile; ?>
-
-        <?php if ($paged > 1) { ?>
+        if ($paged > 1) {
+            ?>
 
             <nav id="nav-posts">
                 <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
@@ -32,7 +32,9 @@ Template Name: Blog page
                 <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
             </nav>
 
-        <?php } ?>
+        <?php } /* end if paged */ ?>
+
+        <?php } /* end if have posts */ ?>
 
         <?php wp_reset_postdata(); ?>
 
