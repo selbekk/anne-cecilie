@@ -1,7 +1,5 @@
 <?php
 
-/* Theme functions will go here */
-
 /* Register menus */
 
 function register_menus() {
@@ -13,5 +11,17 @@ function register_menus() {
     );
 }
 add_action('init', 'register_menus');
+
+/* Register content types */
+
+function register_content_types() {
+
+
+}
+add_action('init', 'register_content_types');
+
+/* Registering theme support for stuff */
+
+add_theme_support( 'post-thumbnails' );
 
 ?>

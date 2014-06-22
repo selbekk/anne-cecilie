@@ -15,7 +15,20 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<div class="site-wrapper background-image modeling">
+    <?php
+    $backgroundCss = "";
+
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+        if(get_the_post_thumbnail() != '') {
+            $thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full')[0];
+            $backgroundCss = " style=\"background-image: url($thumb_url)\"";
+        }
+    endwhile;
+
+    endif;
+
+    ?>
+<div class="site-wrapper background-image modeling"<?php echo $backgroundCss; ?>>
     <div class="site-wrapper-inner">
         <div class="masthead-wrapper">
             <div class="masthead clearfix">
