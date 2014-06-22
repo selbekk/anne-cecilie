@@ -2,7 +2,7 @@
     <header>
         <h2><?php the_title(); ?></h2>
         <p class="tags"><?php
-            $tag = '<span class="tag">#</span>';
+            $tag = '<span class="tag-symbol">#</span>';
             the_tags($tag, $tag);
         ?> |
         <?php the_date(); ?></p>
