@@ -1,0 +1,458 @@
+* {
+    color: #eee;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    background: #222426;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.site-wrapper.index {
+    background: url(../img/content/fashion-1.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.modeling {
+    background: url(../img/content/fashion-2.jpg) top center no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.acting {
+    background: url(../img/content/fashion-5.jpg) center left no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.resume {
+    background: url(../img/content/fashion-6.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.site-wrapper.biography {
+    background: url(../img/content/fashion-3.jpg) top left no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.booking {
+    background: url(../img/content/fashion-4.jpg) center left no-repeat;
+    background-size: cover;
+}
+
+.site-wrapper.search-results {
+    background: url(../img/content/fashion-7.jpg) center left no-repeat fixed;
+    background-size: cover;
+}
+
+.site-wrapper.background-image .site-wrapper-inner {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.featured {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+/*
+ * Header
+ */
+
+.masthead-wrapper {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    width: 100%;
+    background: #0e0e0e;
+}
+
+.masthead-wrapper .masthead {
+    position: static;
+    margin: 0 auto;
+}
+
+.masthead-brand {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.masthead-brand a {
+    color: white;
+}
+
+.masthead-nav {
+    text-align: center;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+
+li.inactive a {
+    color: #555;
+}
+
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+/*
+ * Search
+ */
+li.search {
+    display: none;
+}
+
+.search-wrapper {
+    padding: 10px 0 0 0;
+
+    position: relative;
+    bottom: -3px;
+}
+
+.search-wrapper .search-field,
+.search-wrapper .glyphicon-search {
+    display: none;
+}
+
+.search-wrapper .search-form,
+.search-wrapper .glyphicon-search {
+    float: right;
+}
+
+.search-wrapper .search-field {
+    background-color: transparent;
+    width: 0;
+    border: 0;
+    margin: 0;
+
+    outline: none;
+    border-bottom: 1px solid #eee;
+}
+
+.search-wrapper .glyphicon {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/*
+ * Longer texts
+ */
+
+.text-scroller {
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+    .masthead-nav {
+        float: right;
+        text-align: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 200px 20px 100px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/*
+ * Gallery
+ */
+
+.gallery > h3 {
+    margin-left: 5px;
+}
+
+.gallery > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery ul li {
+    display: block;
+    float: left;
+}
+
+.image.gallery ul li {
+    width: 100%;
+}
+
+.video.gallery ul li {
+    width: 100%;
+}
+
+.gallery .gallery-item {
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.image.gallery .gallery-item {
+    padding: 5px 5px 30px;
+}
+
+.video.gallery .gallery-item {
+    padding: 10px 0;
+}
+
+.image.gallery .gallery-item:hover {
+    background-color: #4f4f4f;
+    cursor: pointer;
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+}
+
+/*
+ * Resume
+ */
+
+.resume ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resume table {
+    width: 100%;
+}
+.resume table thead th {
+    background-color: #0f0f0f;
+    background-color: rgba(15,15,15, 0.8);
+    padding: 10px 5px;
+}
+
+.resume table td {
+    padding: 5px;
+}
+
+.resume table tr:nth-of-type(n) {
+    background-color: #3f3f3f;
+    background-color: rgba(63,63,63, 0.8);
+}
+
+.resume table tr:nth-of-type(2n) {
+    background-color: #666666;
+    background-color: rgba(102,102,102, 0.8);
+}
+
+
+/*
+ * Booking / Contact
+ */
+
+.contact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact .input-group {
+    margin: 20px 0;
+}
+
+.contact .input-group .input-group-addon.glyphicon {
+    top: 0;
+}
+
+/*
+ * Search results
+ */
+
+.search-results .search-results {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 2px solid #f0f0f0;
+}
+
+.search-results > .search-result {
+    margin-bottom: 10px;
+    background-color: #3f3f3f;
+    background-color: rgba(63,63,63, 0.8);
+
+    transition: all 0.2s linear;
+
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.search-results > .search-result:hover,
+.search-results > .search-result:active {
+    background-color: #666666;
+    background-color: rgba(102,102,102, 0.8);
+}
+
+.search-results > .search-result > a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.search-results > .search-result > a > * {
+    display: table-cell;
+}
+
+.search-results > .search-result > a .search-result-addon {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #aaa;
+    color: #333;
+
+    padding: 10px 15px;
+
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-results > .search-result > a .content {
+    padding-left: 20px;
+}
+
+.search-results .search-result > a > .content h3 {
+    margin: 10px 0;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot-wrapper {
+    display: none;
+}
+
+.mastfoot {
+    margin: 0 auto;
+}
+
+.mastfoot .inner p,
+.mastfoot .inner a {
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+
+    .image.gallery ul li {
+        width: 25%;
+    }
+
+    li.search {
+        display: inline-block;
+    }
+
+    .mastfoot .inner {
+        padding: 10px;
+    }
+
+    .mastfoot-wrapper {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #0f0f0f;
+        opacity: 0.75;
+    }
+    .mastfoot {
+        display: block;
+        position: static;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
