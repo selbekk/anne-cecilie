@@ -13,7 +13,7 @@ if( !isset($_POST['name'], $_POST['email'], $_POST['message']) ) {
 }
 
 // Let's set up some defaults;
-$fromEmail = $_POST['email']
+$fromEmail = $_POST['email'];
 $toEmail = 'ac.ukkelberg@gmail.com';
 $subject = 'Melding fra websiden din!';
 $fromName = $_POST['name'];
