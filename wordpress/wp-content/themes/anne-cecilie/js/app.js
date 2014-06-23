@@ -6,6 +6,7 @@
         };
 
         ACU.Search(opts);
+        ACU.Booking();
     };
 
     var whenReady = function() {

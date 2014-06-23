@@ -1,4 +1,1 @@
-var ACU = {
-    Search: {},
-    ContactForm: {}
-};
+var ACU = { };

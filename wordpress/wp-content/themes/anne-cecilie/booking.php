@@ -11,7 +11,7 @@ Template Name: Booking page
     <?php the_content(); ?>
     <div class="contact row">
         <div class="col-md-8 form-wrapper">
-            <form id="contact-form" method="post" action="/">
+            <form id="contact-form" method="post" action="<?php echo get_template_directory(); ?>/ajax/booking.php">
                 <div class="input-group">
                     <span class="input-group-addon glyphicon glyphicon-user"></span>
                     <input type="text" name="name" class="form-control" placeholder="Your name" required>
@@ -24,7 +24,7 @@ Template Name: Booking page
                     <span class="input-group-addon glyphicon glyphicon-pencil"></span>
                     <textarea name="message" rows="6" class="form-control" placeholder="Your message" required></textarea>
                 </div>
-                <input type="button" class="btn btn-default" value="Send request" />
+                <input type="submit" class="btn btn-default" value="Send request" />
             </form>
         </div>
 
@@ -33,7 +33,7 @@ Template Name: Booking page
             <h3>Contact</h3>
             <ul>
                 <?php
-                foreach( get_post_custom($post_id) as $customKey => $customValue) {
+                foreach( get_post_custom() as $customKey => $customValue) {
                     if( strpos($customKey, '_') === 0) {
                         continue; // Skip internal wp stuff!
                     }

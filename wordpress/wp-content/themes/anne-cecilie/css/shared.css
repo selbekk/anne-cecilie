@@ -370,6 +370,28 @@ li.search {
     margin: 0;
 }
 
+/*
+ * General messages
+ */
+
+ .message-box {
+     padding: 10px;
+     font-size: 110%;
+     margin: 10px 0;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+ }
+
+ .message-box.success {
+     color: #4F8A10;
+     background-color: #DFF2BF;
+ }
+
+ .message-box.error {
+     color: #9F6000;
+     background-color: #FEEFB3;
+ }
+
 
 /*
  * Affix and center

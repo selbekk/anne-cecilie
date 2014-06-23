@@ -22,6 +22,7 @@
 
     <!-- Page specific js -->
     <script src="<?php bloginfo('template_directory'); ?>/js/index/app.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/booking/booking.js"></script>
 
     <!-- Wordpress specific js -->
     <?php wp_footer(); ?>
