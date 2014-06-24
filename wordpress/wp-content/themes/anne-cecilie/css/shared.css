@@ -335,6 +335,44 @@ h1.search-heading {
      background-color: #FEEFB3;
  }
 
+/*
+ * Gallery stuff
+ */
+
+ .gallery-wrapper {
+     margin-bottom: 20px;
+ }
+
+ .gallery-wrapper h2 {
+     margin-left: 10px;
+     margin-right: 10px;
+     border-bottom: 2px solid white;
+
+ }
+
+ .gallery-wrapper .gallery-item {
+     padding: 10px;
+     margin: 0 0 10px 0;
+     cursor: pointer;
+     transition: all 0.2s ease-out;
+ }
+
+.gallery-wrapper .gallery-item:hover,
+.gallery-wrapper .gallery-item:active {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.gallery-wrapper .gallery-item img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.gallery-wrapper .gallery-item .caption {
+    padding-top: 3px;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
 
 /*
  * Affix and center
