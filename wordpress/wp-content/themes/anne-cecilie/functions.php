@@ -44,8 +44,6 @@ function customFormatGallery($string, $attr){
 
     $numColumns = ceil(12 / $numColumns);
 
-
-
     $output = '<div class="gallery-wrapper row">';
 
     if(isset($attr['heading'])) {
@@ -54,14 +52,15 @@ function customFormatGallery($string, $attr){
 
     foreach($posts as $imagePost){
         //print_r($imagePost); echo "<br /><br />"; // for debugging purposes - remove when working
-        // TODO: style correctly
-        // TODO: respect columns
         // TODO: create JS for lightbox
         $imageElem = wp_get_attachment_image($imagePost->ID, 'lg-thumb');
+        $link = get_attachment_link( $imagePost->ID);
 
         $output .=  '<div class="gallery-item col-sm-'. $numColumns .'" data-id="'. $imagePost->ID .'">' .
-                        $imageElem .
-                        '<p class="caption">'. $imagePost->post_excerpt .'</p>' .
+                        '<a href="'. $link .'" title="Click to enhance">' .
+                            $imageElem .
+                            '<p class="caption">'. $imagePost->post_excerpt .'</p>' .
+                        '</a>' .
                     '</div>';
     }
 
