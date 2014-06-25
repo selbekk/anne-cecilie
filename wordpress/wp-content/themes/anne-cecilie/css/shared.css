@@ -373,6 +373,9 @@ h1.search-heading {
     text-transform: uppercase;
 }
 
+img.full-width {
+    width: 100%;
+}
 
 /*
  * Affix and center

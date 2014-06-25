@@ -4,9 +4,12 @@
 <?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-        $link = wp_get_attachment_image_src( $post->id, "full");
-        $imgElem = wp_get_attachment_image( $post->id, "large");
-        echo '<a href="' . $link[0] . '" title="See full version">' . $imgElem . '</a>';
+        $fullLink = wp_get_attachment_image_src( $post->ID, "full");
+        $largeLink = wp_get_attachment_image_src( $post->ID, "large");
+        $altText = get_post_meta($post->ID, '_wp_attachment_image_alt', true);
+        echo '<a href="' . $fullLink[0] . '" title="See full version">' .
+                '<img src="'. $largeLink[0] .'" alt="'. $altText .'" class="full-width"/>'.
+        '</a>';
         ?>
 
         <div class="image-meta">
