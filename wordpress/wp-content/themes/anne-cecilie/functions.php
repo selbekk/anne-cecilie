@@ -42,7 +42,7 @@ function customFormatGallery($string, $attr){
         $numColumns = 1; // let's not divide by zero
     };
 
-    $numColumns = ceil(12 / $numColumns);
+    $numColumnsClass = ceil(12 / $numColumns);
 
     $output = '<div class="gallery-wrapper row">';
 
@@ -50,18 +50,22 @@ function customFormatGallery($string, $attr){
         $output .= '<h2>'. $attr['heading'] .'</h2>';
     }
 
-    foreach($posts as $imagePost){
-        //print_r($imagePost); echo "<br /><br />"; // for debugging purposes - remove when working
-        // TODO: create JS for lightbox
+    $count = 0;
+    foreach($posts as $imagePost) {
+
         $imageElem = wp_get_attachment_image($imagePost->ID, 'lg-thumb');
         $link = get_attachment_link( $imagePost->ID);
 
-        $output .=  '<div class="gallery-item col-sm-'. $numColumns .'" data-id="'. $imagePost->ID .'">' .
+        $output .=  '<div class="gallery-item col-sm-'. $numColumnsClass .'" data-id="'. $imagePost->ID .'">' .
                         '<a href="'. $link .'" title="Click to enhance">' .
                             $imageElem .
                             '<p class="caption">'. $imagePost->post_excerpt .'</p>' .
                         '</a>' .
                     '</div>';
+
+        if($count++ != 0 && $count % $numColumns == 0) {
+            $output .= '<div class="clearfix"></div>';
+        }
     }
 
     $output .= "</div>";
