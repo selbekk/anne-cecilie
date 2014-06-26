@@ -7,6 +7,7 @@
 
         ACU.Search(opts);
         ACU.Booking();
+        ACU.Navigation();
     };
 
     var whenReady = function() {

@@ -41,12 +41,12 @@
                     array(
                         'theme_location' => 'main-menu',
                         'menu' => 'main-menu',
-                        'container_class' => 'main-navigation',
+                        'container_class' => 'main-navigation hidden-xs',
                         'menu_class' => 'nav masthead-nav'
                     )
                 );
-
                 ?>
+                <div class="menu-trigger visible-xs"><span class="glyphicon glyphicon-align-justify"></span></div>
             </div>
         </div>
         <div class="cover-container">

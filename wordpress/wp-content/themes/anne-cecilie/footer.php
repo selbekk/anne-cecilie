@@ -16,9 +16,11 @@
 
     <!-- Shared js resources -->
     <script src="<?php bloginfo('template_directory'); ?>/js/shared/namespace.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/shared/nav/nav.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/bin/search.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/shared/search/search.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
+
 
     <!-- Page specific js -->
     <script src="<?php bloginfo('template_directory'); ?>/js/index/app.js"></script>

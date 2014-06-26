@@ -110,6 +110,37 @@ li.inactive a {
 }
 
 /*
+ * Mobile navigation
+ */
+
+.menu-trigger {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.mobile-navigation {
+
+}
+
+.mobile-navigation .masthead-nav > li {
+    display: block;
+    margin: 0;
+}
+
+.mobile-navigation .masthead-nav > li a {
+    text-align: center;
+    font-size: 150%;
+}
+
+.mobile-navigation .masthead-nav > li a:hover,
+.mobile-navigation .masthead-nav > li a:active {
+    border-color: transparent;
+}
+
+/*
  * Search
  */
 li.search {
