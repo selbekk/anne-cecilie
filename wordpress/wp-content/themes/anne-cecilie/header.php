@@ -41,7 +41,7 @@
                     array(
                         'theme_location' => 'main-menu',
                         'menu' => 'main-menu',
-                        'container_class' => 'main-navigation hidden-xs',
+                        'container_class' => 'main-navigation',
                         'menu_class' => 'nav masthead-nav'
                     )
                 );
