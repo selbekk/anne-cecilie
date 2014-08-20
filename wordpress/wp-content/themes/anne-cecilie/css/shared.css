@@ -413,6 +413,47 @@ img.full-width {
 }
 
 /*
+ * Blog posts
+ */
+
+ .post {
+     border-bottom: 1px solid #ddd;
+     padding: 10px 0;
+ }
+
+ .post .tags a {
+     color: #ccc;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ .post .tags a:hover,
+ .post .tags a:focus {
+     color:
+ }
+
+ .post p {
+     line-height: 150%;
+     font-size: 110%;
+ }
+
+ .post:last-of-type {
+     border-bottom: 0px;
+ }
+
+
+ @media (min-width: 768px) {
+     .post .tags .glyphicon {
+         display: inline-blocK;
+         margin: 0 10px;
+     }
+
+     .post .tags .glyphicon:first-of-type {
+         margin-left: 0;
+     }
+ }
+
+/*
  * Affix and center
  */
 

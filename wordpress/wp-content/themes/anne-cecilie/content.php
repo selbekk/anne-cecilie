@@ -10,11 +10,14 @@
 <article id="<?php the_ID(); ?>" class="post">
     <header>
         <h2><?php the_title(); ?></h2>
-        <p class="tags"><?php
+        <p class="tags">
+            <span class="glyphicon glyphicon-tags"></span>
+            <?php
             $tag = ' <span class="tag-symbol">#</span>';
             the_tags($tag, $tag);
-        ?> |
-        <?php the_date(); ?></p>
+            ?>
+            <span class="glyphicon glyphicon-time"></span>
+            <?php the_date(); ?></p>
     </header>
     <?php the_content('Continue reading'); ?>
 </article>
