@@ -5,12 +5,21 @@ In the spirit of openness, I'm always glad to share my code.
 This is a website and design - based off Twitter Bootstrap - made for a model friend of mine. It is
 complete with galleries, resume templates and all a budding model needs.
 
-## Release 1.0
+This website is still under active development, and probably will be for the foreseeable future.
 
-The first release is now available (check out tag v1.0).
+## Release 1.1
+
+The first release is now available (check out tag v1.1).
 
 The repo now contains two folders - one containing the first version of the design,
 and another one containing the wordpress theme.
+
+### Features
+- Support for blogging
+- Support for galleries
+- Support for mailing
+- Support for templates for seveal types of posts and pages
+- Mobile friendly and responsive design
 
 ## Support
 
