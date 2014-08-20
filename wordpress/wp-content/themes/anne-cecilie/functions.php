@@ -31,7 +31,7 @@ add_filter('post_gallery','customFormatGallery',10,2);
 
 function customFormatGallery($string, $attr){
 
-    $posts = get_posts(array('include' => $attr['ids'],'post_type' => 'attachment'));
+    $posts = get_posts(array('include' => $attr['ids'],'post_type' => 'attachment', 'orderby' => 'post__in'));
 
     $numColumns = 4; // default value
     if(isset($attr['columns'])) {
