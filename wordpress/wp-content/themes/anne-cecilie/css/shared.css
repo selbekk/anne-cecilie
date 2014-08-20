@@ -423,6 +423,10 @@ img.full-width {
         top: 0;
     }
 
+    .masthead-brand {
+        margin-top: 15px;
+    }
+
     .image.gallery ul li {
         width: 25%;
     }
