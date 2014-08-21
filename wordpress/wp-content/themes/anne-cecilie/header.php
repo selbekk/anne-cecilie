@@ -14,9 +14,15 @@
             $backgroundCss = " style=\"background-image: url($thumb_url)\"";
         }
 
-        $title = get_the_title();
-        $description = get_the_excerpt();
         $site_name = get_bloginfo('name');
+        $title = "";
+        if(is_front_page()) {
+            $title = $site_name;
+        }
+        else {
+            $title = get_the_title() . " - " . $site_name;
+        }
+        $description = get_the_excerpt();
 
     endwhile;
 
@@ -30,7 +36,7 @@
     <meta property="og:description" content="<?php echo $description; ?>">
     <meta property="og:site_name" content="<?php echo $site_name; ?>">
 
-    <title><?php the_title(); ?></title>
+    <title><?php echo $title; ?></title>
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/shared.css" />
