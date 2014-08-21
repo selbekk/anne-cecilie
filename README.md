@@ -6,6 +6,7 @@ This is a website and design - based off Twitter Bootstrap - made for a model fr
 complete with galleries, resume templates and all a budding model needs.
 
 This website is still under active development, and probably will be for the foreseeable future.
+Follow the [trello-board] to see what's in the pipeline!
 
 ## Release 1.1
 
@@ -30,4 +31,3 @@ I don't really offer support on this project, but if you find a bug, please repo
 - Making the site accessible up to the WCAG 2.0 standard
 
 The latest tag is always available online at [annececilieukkelberg.com](http://www.annececilieukkelberg.com).
-
