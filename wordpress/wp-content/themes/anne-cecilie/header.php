@@ -2,9 +2,33 @@
 <html>
 <head lang="en">
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php bloginfo('description'); ?>">
+    <meta name="keywords" content="anne cecilie ukkelberg, ac ukkelberg, model, modell, actor, skuespiller, singer">
+    <?php
+    $backgroundCss = "";
+
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+        if(get_the_post_thumbnail() != '') {
+            $thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full')[0];
+            $backgroundCss = " style=\"background-image: url($thumb_url)\"";
+        }
+
+        $title = get_the_title();
+        $description = get_the_excerpt();
+        $site_name = get_bloginfo('name');
+
+    endwhile;
+
+    endif;
+
+    ?>
+    <meta property="og:title" content="<?php echo $title; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo $thumb_url; ?>">
+    <meta property="og:url" content="<?php echo get_permalink(); ?>">
+    <meta property="og:description" content="<?php echo $description; ?>">
+    <meta property="og:site_name" content="<?php echo $site_name; ?>">
 
     <title><?php the_title(); ?></title>
 
@@ -15,19 +39,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <?php
-    $backgroundCss = "";
 
-    if ( have_posts() ) : while ( have_posts() ) : the_post();
-        if(get_the_post_thumbnail() != '') {
-            $thumb_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full')[0];
-            $backgroundCss = " style=\"background-image: url($thumb_url)\"";
-        }
-    endwhile;
-
-    endif;
-
-    ?>
 <div class="site-wrapper background-image modeling"<?php echo $backgroundCss; ?>>
     <div class="site-wrapper-inner">
         <div class="masthead-wrapper">
@@ -47,7 +59,7 @@
                 );
                 ?>
                 <div class="menu-trigger visible-xs"><span class="glyphicon glyphicon-align-justify"></span></div>
-            </div>
-        </div>
+            </div> <!-- end .masthead -->
+        </div> <!-- end .masthead-wrapper -->
         <div class="cover-container">
             <div class="inner cover">

@@ -1,8 +1,9 @@
-            </div>
-            <div class="mastfoot-wrapper clearfix">
-                <div class="mastfoot">
-                    <div class="inner">
-                        <p>Copyright &copy; 2014. All rights reserved. For bookings, contact <a href="mailto:ac.ukkelberg@gmail.com">ac.ukkelberg@gmail.com</a></p>
+                </div>
+                <div class="mastfoot-wrapper clearfix">
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <p>Copyright &copy; 2014. All rights reserved. For bookings, contact <a href="mailto:ac.ukkelberg@gmail.com">ac.ukkelberg@gmail.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
