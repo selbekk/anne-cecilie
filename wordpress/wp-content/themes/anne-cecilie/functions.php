@@ -56,7 +56,7 @@ function customFormatGallery($string, $attr){
         $imageElem = wp_get_attachment_image($imagePost->ID, 'lg-thumb');
         $link = get_attachment_link( $imagePost->ID);
 
-        $output .=  '<div class="gallery-item col-sm-'. $numColumnsClass .'" data-id="'. $imagePost->ID .'">' .
+        $output .=  '<div class="gallery-item col-xs-'. $numColumnsClass .'" data-id="'. $imagePost->ID .'">' .
                         '<a href="'. $link .'" title="Click to enhance">' .
                             $imageElem .
                             '<p class="caption">'. $imagePost->post_excerpt .'</p>' .
