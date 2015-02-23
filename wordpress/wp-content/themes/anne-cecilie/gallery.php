@@ -7,7 +7,7 @@ Template Name: Gallery page
 <?php get_header(); ?>
 
     <div class="inner">
-        gallery page!
+        <!-- Gallery page -->
 
     </div>
 

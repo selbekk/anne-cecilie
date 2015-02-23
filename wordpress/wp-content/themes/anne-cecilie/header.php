@@ -40,14 +40,16 @@
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/shared.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" />
 
     <!-- Wordpress -->
     <?php wp_head(); ?>
 </head>
 <body>
 
-<div class="site-wrapper background-image modeling"<?php echo $backgroundCss; ?>>
-    <div class="site-wrapper-inner">
+<div class="site-wrapper background-image modeling" <?php echo $backgroundCss; ?>>
+    <div class="site-wrapper-inner <?php global $post;
+    echo $post->post_name; ?>">
         <div class="masthead-wrapper">
             <div class="masthead clearfix">
                 <h3 class="masthead-brand">

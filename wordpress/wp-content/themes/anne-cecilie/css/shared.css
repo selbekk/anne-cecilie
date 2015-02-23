@@ -374,15 +374,14 @@ h1.search-heading {
  * Gallery stuff
  */
 
- .gallery-wrapper {
-     margin-bottom: 20px;
- }
-
  .gallery-wrapper h2 {
      margin-left: 10px;
      margin-right: 10px;
      border-bottom: 2px solid white;
+ }
 
+ .gallery-wrapper {
+     margin-bottom: 20px;
  }
 
  .gallery-wrapper .gallery-item {
@@ -410,6 +409,13 @@ h1.search-heading {
 
 img.full-width {
     width: 100%;
+}
+
+/*
+ * Other stuff
+ */
+h2.underlined {
+	border-bottom: 2px solid white;
 }
 
 /*

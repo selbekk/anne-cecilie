@@ -10,4 +10,37 @@ Tags: model, acting, gallery, image, video, portfolio, responsive, black
 Text Domain: annececilie
 */
 
-/* Feel free to add your custom CSS here - although cool people add it to the css/shared.css file */
+/* Base styles are available in css/shared.css. The styles found here will override those. */
+
+/* Temporary disable background filtering */
+.site-wrapper.background-image .site-wrapper-inner.front-page {
+	background-color: rgba(0,0,0,0.1);
+}
+/* Desktops and laptops */
+@media only screen 
+and (min-width : 1000px) {
+	table.three-columns td:nth-of-type(n) {
+		width: 35%;
+	}
+
+	table.three-columns td:nth-of-type(2n) {
+		width: 20%;
+	}
+
+	table.three-columns td:nth-of-type(3n) {
+		width: auto;
+	}
+
+	table.no-background tr, table.no-background th {
+		background-color: transparent !important;
+	}
+
+	table.no-space {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	table.no-space tr td {
+		padding: 0 5px;
+	}
+}
