@@ -419,6 +419,43 @@ h2.underlined {
 }
 
 /*
+ * Gallery overlay
+ */
+.layover-outer {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.layover-inner {
+    margin: 50px auto;
+    width: 100%;
+    height: 100%;
+}
+
+.layover-inner .image-holder {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layover-outer .closer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+/*
  * Blog posts
  */
 
