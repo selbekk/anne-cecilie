@@ -451,8 +451,40 @@ h2.underlined {
     position: fixed;
     top: 10px;
     right: 10px;
+}
+
+.layover-outer .trigger {
+    position: fixed;
     font-size: 300%;
     cursor: pointer;
+}
+
+.layover-outer .trigger span {
+    color: #ccc;
+    transition: color 100ms linear;
+}
+
+.layover-outer .trigger:hover span,
+.layover-outer .trigger:focus span {
+    color: white;
+}
+
+.layover-outer .trigger.disabled span {
+    color: #999;
+}
+
+.layover-outer .trigger.next,
+.layover-outer .trigger.previous {
+    margin: 0 0 -25% 0;
+    top: 50%;
+}
+
+.layover-outer .trigger.next {
+    right: 10px;
+}
+
+.layover-outer .trigger.previous {
+    left: 10px;
 }
 
 /*

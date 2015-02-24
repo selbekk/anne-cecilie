@@ -26,7 +26,9 @@
                 '<div class="layover-inner">' +
                     '<div class="image-holder"></div>' +
                 '</div>' +
-                '<div class="closer"><span class="glyphicon glyphicon-remove"></span></div>' +
+                '<div class="trigger closer"><span class="glyphicon glyphicon-remove"></span></div>' +
+                '<div class="trigger previous"><span class="glyphicon glyphicon-chevron-left"></span></div>' +
+                '<div class="trigger next"><span class="glyphicon glyphicon-chevron-right"></span></div>' +
             '</div>';
 
             $('body').append(layoverHtml);
