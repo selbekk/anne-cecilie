@@ -15,7 +15,6 @@ add_action('init', 'register_menus');
 /* Register content types */
 
 function register_content_types() {
-    // TODO: Now, create some content types bro!
 
 }
 add_action('init', 'register_content_types');
@@ -54,9 +53,11 @@ function customFormatGallery($string, $attr){
     foreach($posts as $imagePost) {
 
         $imageElem = wp_get_attachment_image($imagePost->ID, 'lg-thumb');
-        $link = get_attachment_link( $imagePost->ID);
+        $link = get_attachment_link( $imagePost->ID );
+        $fullImageSrc = wp_get_attachment_image_src($imagePost->ID, 'large')[0];
 
-        $output .=  '<div class="gallery-item col-xs-'. $numColumnsClass .'" data-id="'. $imagePost->ID .'">' .
+
+        $output .=  '<div class="gallery-item col-xs-'. $numColumnsClass .'" data-full-url="'. $fullImageSrc .'">' .
                         '<a href="'. $link .'" title="Click to enhance">' .
                             $imageElem .
                             '<p class="caption">'. $imagePost->post_excerpt .'</p>' .

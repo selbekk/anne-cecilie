@@ -12,7 +12,7 @@
                 $layover = $('.layover-outer');
             }
 
-            var imgUrl = $itemToShow.find('img').attr('src');
+            var imgUrl = $itemToShow.data('full-url');
 
             $layover.find('.image-holder').css({ backgroundImage: 'url('+ imgUrl +')' } );
 

@@ -433,13 +433,13 @@ h2.underlined {
     background-color: rgba(0,0,0,0.7);
 }
 
-.layover-inner {
-    margin: 50px auto;
-    width: 100%;
+.layover-outer .layover-inner {
+    margin: 0 auto;
+    width: 90%;
     height: 100%;
 }
 
-.layover-inner .image-holder {
+.layover-outer .layover-inner .image-holder {
     width: 100%;
     height: 100%;
     background-position: center center;
