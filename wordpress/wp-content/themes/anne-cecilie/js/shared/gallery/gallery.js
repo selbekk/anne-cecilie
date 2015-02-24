@@ -18,6 +18,11 @@
 
             currentItem = $itemToShow;
             isShowing = true;
+
+            var disablePrevious = !hasPrevious();
+            var disableNext = !hasNext();
+            $('.trigger.previous').toggleClass('disabled', disablePrevious);
+            $('.trigger.next').toggleClass('disabled', disableNext);
         };
 
         var createLayover = function() {
@@ -64,6 +69,14 @@
             }
         };
 
+        var hasNext = function() {
+            return currentItem.next().hasClass('gallery-item') || currentItem.next().next().hasClass('gallery-item');
+        };
+
+        var hasPrevious = function() {
+            return currentItem.prev().hasClass('gallery-item') || currentItem.prev().prev().hasClass('gallery-item');
+        };
+
         var keyboardListener = function(e) {
             // if not showing, don't listen
             if(!isShowing) {
@@ -100,6 +113,8 @@
             $thumbnails.on('click', thumbnailClicked);
             $(document).on('keyup', keyboardListener);
             $(document).delegate('.closer', 'click', hideLayover);
+            $(document).delegate('.trigger.next', 'click', nextImage);
+            $(document).delegate('.trigger.previous', 'click', previousImage);
         };
 
         init();
