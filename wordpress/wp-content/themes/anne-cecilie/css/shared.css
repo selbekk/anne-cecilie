@@ -423,7 +423,7 @@ h2.underlined {
  */
 .layover-outer {
     position: fixed;
-    z-index: 99999;
+    z-index: 999;
     top: 0;
     left: 0;
     right: 0;
@@ -469,8 +469,8 @@ h2.underlined {
     color: white;
 }
 
-.layover-outer .trigger.disabled span {
-    color: #666;
+.layover-outer .trigger.disabled {
+    display: none;
 }
 
 .layover-outer .trigger.next,
