@@ -1,0 +1,33 @@
+/* Changing backgrounds */
+.background-images {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.background-images .bg-img {
+    background: transparent center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    width: 100%;
+    width: 100vw;
+}
+
+.background-images .bg-img.is-showing {
+    opacity: .7;
+}
+
+.site-wrapper {
+    position: relative;
+    z-index: 2;
+}

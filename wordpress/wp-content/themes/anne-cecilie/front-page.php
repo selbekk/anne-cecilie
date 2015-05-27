@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('front-page'); ?>
 
 <?php while ( have_posts() ) : the_post(); /* ze loop */ ?>
 
@@ -8,4 +8,4 @@
 
 <?php endwhile; /* end the loop */ ?>
 
-<?php get_footer(); ?>
+<?php get_footer('front-page'); ?>
