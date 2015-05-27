@@ -11,5 +11,5 @@ $(function() {
 
         $current.removeClass(showClass);
         $next.addClass(showClass);
-    }, 5000);
+    }, 7000);
 });
